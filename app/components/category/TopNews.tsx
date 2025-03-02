@@ -2,7 +2,7 @@ import React from "react";
 import SingleHeader from "../layouts/SingleHeader";
 import ImageType from "../newsTypes/ImageType";
 import LinkType from "../newsTypes/LinkType";
-
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 function TopNews({ data }: any) {
   return (
     <div>

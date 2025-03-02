@@ -2,8 +2,9 @@ import React from "react";
 import ImageType from "../newsTypes/ImageType";
 import LinkType from "../newsTypes/LinkType";
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 function SubCategory({ data }: any) {
-  //   console.log("data in server", data);
+
   return (
     <div className="grid grid-cols-4 gap-4 px-10">
       {data?.news.map((item: any, index: any) => {

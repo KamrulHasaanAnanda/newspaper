@@ -3,7 +3,7 @@ import SubCategory from "./components/category/SubCategory";
 import TopNews from "./components/category/TopNews";
 
 export default function Home() {
-  let data = fakeData;
+  const data = fakeData;
 
   return (
     <div className="w-full py-4 ">
