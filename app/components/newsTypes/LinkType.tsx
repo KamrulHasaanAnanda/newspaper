@@ -3,38 +3,40 @@ import React from "react";
 
 interface LinkTypeProps {
   data: any;
-  description: string;
-  type: string;
+//   description: string;
+//   type: string;
 }
 
-const LinkType: React.FC<LinkTypeProps> = ({ data, description }) => {
+const LinkType: React.FC<LinkTypeProps> = ({ data }) => {
   return (
     <div className="relative ">
       <div
-        className={`h-12 text-center`}
+        className={`h-12 text-center flex justify-center items-center`}
         style={{
-          backgroundColor: data?.color || "black",
+          backgroundColor: "#181616EE",
           color: "white",
         }}
       >
-        <p className="mt-2 text-white text-sm text-center  w-full">
+        <p className="mt-0 text-white text-[23px] font-semibold text-center  w-full">
           {data?.name}
         </p>
       </div>
 
-      {data?.links.map((link: any) => (
-        <div className="flex items-center justify-between gap-2">
+      {data?.links.map((link: any,index:any) => (
+        <div className="flex items-center  gap-4 bg-[#EEEEEEEE] w-full p-2 my-2 cursor-pointer" key={index}>
           <Image
             src={link.image}
             alt={link.description}
-            className="w-16 h-16 object-cover"
+            className="w-[50px] h-[34px] object-cover"
+            width={50}
+            height={34}
           />
-          <p className="mt-2 text-white text-sm text-center absolute bottom-0 w-full">
+          <p className="mt-0 text-[#1B1919] font-semibold text-sm">
             {link.description}
           </p>
         </div>
       ))}
-      <div></div>
+      
     </div>
   );
 };
