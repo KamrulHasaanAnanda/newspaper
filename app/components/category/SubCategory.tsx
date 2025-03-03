@@ -9,7 +9,7 @@ function SubCategory({ data }: any) {
     <div className="grid grid-cols-4 gap-4 px-10">
       {data?.news.map((item: any, index: any) => {
         let componentNow;
-        console.log("item", item);
+        // console.log("item", item);
         if (item.type === "imageType" || item?.type === "imageTypeBig")
            
             componentNow = <ImageType

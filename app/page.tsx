@@ -1,6 +1,7 @@
 import fakeData from "@/fakeData";
 import SubCategory from "./components/category/SubCategory";
 import TopNews from "./components/category/TopNews";
+import CommonCategory from "./components/category/CommonCategory";
 
 export default function Home() {
   const data = fakeData;
@@ -20,6 +21,14 @@ export default function Home() {
           return (
             <div key={index}>
               <TopNews data={item} />
+            </div>
+          );
+        }
+
+        if (item.type === "commonTypes") {
+          return (
+            <div key={index}>
+              <CommonCategory data={item} />
             </div>
           );
         }

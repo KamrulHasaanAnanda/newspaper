@@ -97,13 +97,15 @@ const fakeData = [
         image:
           "https://images.pexels.com/photos/1550337/pexels-photo-1550337.jpeg?auto=compress&cs=tinysrgb&w=300",
         type: "imageType",
-      },{
+      },
+      {
         name: "Presidential Elections 2025",
         description: "Campaigns are heating up as candidates debate.",
         image:
           "https://images.pexels.com/photos/1550337/pexels-photo-1550337.jpeg?auto=compress&cs=tinysrgb&w=300",
         type: "imageType",
-      },{
+      },
+      {
         name: "Presidential Elections 2025",
         description: "Campaigns are heating up as candidates debate.",
         image:
@@ -133,23 +135,134 @@ const fakeData = [
     ],
   },
   {
-    type: "commonType",
-    name: "জাতীয়",
+    type: "commonTypes",
     news: [
       {
-        name: "Local Elections",
-        description: "Results from different districts.",
-        image:
-          "https://images.pexels.com/photos/1468379/pexels-photo-1468379.jpeg?auto=compress&cs=tinysrgb&w=300",
-        type: "imageType",
+        name: "জাতীয়",
+        news:[
+          {
+          name:"grid-1",
+          news: [
+            {
+              name: "Local Elections",
+              description: "Results from different districts.",
+              image:
+                "https://images.pexels.com/photos/1468379/pexels-photo-1468379.jpeg?auto=compress&cs=tinysrgb&w=300",
+              type: "imageType",
+            },
+            {
+              name: "Local Elections",
+              description: "Results from different districts.",
+              image:
+                "https://images.pexels.com/photos/1468379/pexels-photo-1468379.jpeg?auto=compress&cs=tinysrgb&w=300",
+              type: "imageType",
+            },
+            {
+              name: "Local Elections",
+              description: "Results from different districts.",
+              image:
+                "https://images.pexels.com/photos/1468379/pexels-photo-1468379.jpeg?auto=compress&cs=tinysrgb&w=300",
+              type: "imageType",
+            },
+          ],
+          
+        },
+        {
+          name:"grid-2",
+          news: [
+            {
+              name: "Local Elections",
+              description: "Results from different districts.",
+              image:
+                "https://images.pexels.com/photos/1468379/pexels-photo-1468379.jpeg?auto=compress&cs=tinysrgb&w=300",
+              type: "imageType",
+            },
+            {
+              name: "Local Elections",
+              description: "Results from different districts.",
+              image:
+                "https://images.pexels.com/photos/1468379/pexels-photo-1468379.jpeg?auto=compress&cs=tinysrgb&w=300",
+              type: "imageType",
+            },
+            {
+              name: "Local Elections",
+              description: "Results from different districts.",
+              image:
+                "https://images.pexels.com/photos/1468379/pexels-photo-1468379.jpeg?auto=compress&cs=tinysrgb&w=300",
+              type: "imageType",
+            },
+          ],
+          
+        }
+      
+      ]
+        
       },
+
       {
-        name: "Healthcare Policies",
-        description: "New reforms introduced in medical sectors.",
-        image:
-          "https://images.pexels.com/photos/263402/pexels-photo-263402.jpeg?auto=compress&cs=tinysrgb&w=300",
-        type: "imageTypeMid",
+        name: "সারাদেশ",
+        news:[
+          {
+          name:"grid-1",
+          news: [
+            {
+              name: "Local Elections",
+              description: "Results from different districts.",
+              image:
+                "https://images.pexels.com/photos/1468379/pexels-photo-1468379.jpeg?auto=compress&cs=tinysrgb&w=300",
+              type: "imageType",
+            },
+            {
+              name: "Local Elections",
+              description: "Results from different districts.",
+              image:
+                "https://images.pexels.com/photos/1468379/pexels-photo-1468379.jpeg?auto=compress&cs=tinysrgb&w=300",
+              type: "imageType",
+            },
+            {
+              name: "Local Elections",
+              description: "Results from different districts.",
+              image:
+                "https://images.pexels.com/photos/1468379/pexels-photo-1468379.jpeg?auto=compress&cs=tinysrgb&w=300",
+              type: "imageType",
+            },
+          ],
+          
+        },
+        {
+          name:"grid-2",
+          news: [
+            {
+              name: "Local Elections",
+              description: "Results from different districts.",
+              image:
+                "https://images.pexels.com/photos/1468379/pexels-photo-1468379.jpeg?auto=compress&cs=tinysrgb&w=300",
+              type: "imageType",
+            },
+            {
+              name: "Local Elections",
+              description: "Results from different districts.",
+              image:
+                "https://images.pexels.com/photos/1468379/pexels-photo-1468379.jpeg?auto=compress&cs=tinysrgb&w=300",
+              type: "imageType",
+            },
+            {
+              name: "Local Elections",
+              description: "Results from different districts.",
+              image:
+                "https://images.pexels.com/photos/1468379/pexels-photo-1468379.jpeg?auto=compress&cs=tinysrgb&w=300",
+              type: "imageType",
+            },
+          ],
+          
+        }
+      
+      ]
+        
       },
+    
+
+     
     ],
   },
   {
