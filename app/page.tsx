@@ -28,7 +28,7 @@ export default function Home() {
         if (item.type === "commonTypes") {
           return (
             <div key={index}>
-              <CommonCategory data={item} />
+              <CommonCategory data={item} index={index}/>
             </div>
           );
         }

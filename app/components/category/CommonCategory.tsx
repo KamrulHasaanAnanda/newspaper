@@ -4,44 +4,49 @@ import ImageType from "../newsTypes/ImageType";
 
 function CommonCategory({ data }: any) {
   return (
-    <div className="grid grid-cols-2 gap-2 w-full">
+    <div className="grid grid-cols-2 gap-3 w-full">
       {data?.news.map((item: any, index: any) => {
+        console.log("index", index);
+        const gridOneData = item.news.find(
+          (section: any) => section.name === "grid-1"
+        )?.items;
+        const gridTwoData = item.news.find(
+          (section: any) => section.name === "grid-2"
+        )?.items;
+
         return (
-          <div key={index} className="col-span-1">
+          <div key={item.id} className="col-span-1">
             <SingleHeader title={item?.name} />
-            {item?.news.map((news: any, index: any) => {
-              // let componentNow;
-              // console.log("item", item);
-              // if (item.type === "imageType" || item?.type === "imageTypeBig")
-
-              //     componentNow = <ImageType
-              //       image={item.image}
-              //       description={item.description}
-              //       type={item.type}
-              //     />
-
-              return (
-                <div key={index} className="w-full px-10 grid grid-cols-3">
-                  {index === 0 ? (
-                    <div className="col-span-1 h-auto">
+            <div
+              className={`w-full ${
+                index === 0 || index % 2 == 0 ? "pl-10" : ""
+              } grid grid-cols-3 gap-3`}
+            >
+              <div className="col-span-1 h-auto">
+                {gridOneData && (
+                  <ImageType
+                    image={gridOneData?.image}
+                    description={gridOneData?.description}
+                    type={gridOneData?.type}
+                  />
+                )}
+              </div>
+              <div className="col-span-2 flex gap-2 flex-wrap w-full min-h-80">
+                {gridTwoData &&
+                  gridTwoData.map((item: any, index: any) => (
+                    <div
+                      key={index}
+                      className="w-[calc(50%-0.25rem)]" // 50% minus half of gap-2 (0.5rem / 2 = 0.25rem)
+                    >
                       <ImageType
-                        image={news.image}
-                        description={news.description}
-                        type={news.type}
+                        image={item?.image}
+                        description={item?.description}
+                        type={item?.type}
                       />
                     </div>
-                  ) : (
-                    <div className="col-span-2 flex gap-3 flex-wrap w-full h-60" >
-                      <ImageType
-                        image={news.image}
-                        description={news.description}
-                        type={news.type}
-                      />
-                    </div>
-                  )}
-                </div>
-              );
-            })}
+                  ))}
+              </div>
+            </div>
           </div>
         );
       })}
