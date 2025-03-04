@@ -6,7 +6,6 @@ function CommonCategory({ data }: any) {
   return (
     <div className="grid grid-cols-2 gap-3 w-full">
       {data?.news.map((item: any, index: any) => {
-        console.log("index", index);
         const gridOneData = item.news.find(
           (section: any) => section.name === "grid-1"
         )?.items;

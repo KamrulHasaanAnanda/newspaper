@@ -337,21 +337,34 @@ const fakeData = [
   },
   {
     type: "photoGallery",
-    news: [
+    title: "ফটো গ্যালারি",
+    gallery: [
       {
-        type: "carousel",
-        data: [
-          {
-            description: "Sunset at the beach",
-            image:
-              "https://images.pexels.com/photos/635279/pexels-photo-635279.jpeg?auto=compress&cs=tinysrgb&w=300",
-          },
-          {
-            description: "Mountain view",
-            image:
-              "https://images.pexels.com/photos/9754/mountains-clouds-forest-fog.jpg?auto=compress&cs=tinysrgb&w=300",
-          },
-        ],
+        description: "Sunset at the beach",
+        image:
+          "https://images.pexels.com/photos/635279/pexels-photo-635279.jpeg?auto=compress&cs=tinysrgb&w=300",
+      },
+      {
+        description: "Mountain view",
+        image:
+          "https://images.pexels.com/photos/9754/mountains-clouds-forest-fog.jpg?auto=compress&cs=tinysrgb&w=300",
+      },
+    ],
+
+    items: [
+      {
+        name: "Nature Wonders",
+        description: "Beautiful landscapes around the world.",
+        image:
+          "https://images.pexels.com/photos/3244513/pexels-photo-3244513.jpeg?auto=compress&cs=tinysrgb&w=300",
+        type: "imageType",
+      },
+      {
+        name: "Wildlife Photography",
+        description: "Stunning animal photography.",
+        image:
+          "https://images.pexels.com/photos/247376/pexels-photo-247376.jpeg?auto=compress&cs=tinysrgb&w=300",
+        type: "imageType",
       },
       {
         name: "Nature Wonders",

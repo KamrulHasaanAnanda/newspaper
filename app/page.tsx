@@ -3,6 +3,7 @@ import SubCategory from "./components/category/SubCategory";
 import TopNews from "./components/category/TopNews";
 import CommonCategory from "./components/category/CommonCategory";
 import CommonLinkCategory from "./components/category/CommonLinkCategory";
+import ImageGallery from "./components/category/ImageGallery";
 
 export default function Home() {
   const data = fakeData;
@@ -32,6 +33,15 @@ export default function Home() {
               <CommonCategory data={item} index={index}/>
             </div>
           );
+        }
+
+        if (item?.type === "photoGallery") {
+          return (
+            <div key={index}>
+              <ImageGallery data={item} />
+            </div>
+          );
+          
         }
         if (item?.type === "commonLinkTypes") {
           return (
