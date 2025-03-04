@@ -233,7 +233,6 @@ const fakeData = [
               type: "imageType",
             },
           },
-        
         ],
       },
       {
@@ -332,7 +331,6 @@ const fakeData = [
               type: "imageType",
             },
           },
-        
         ],
       },
     ],
@@ -375,14 +373,15 @@ const fakeData = [
     type: "commonLinkTypes",
     news: [
       {
-        name: "Space Exploration",
-        description: "NASA plans a new Mars mission.",
-        image:
-          "https://images.pexels.com/photos/2152/sky-earth-space-working.jpg?auto=compress&cs=tinysrgb&w=300",
-        type: "imageTypeBig",
-      },
-      {
-        name: "Educational Resources",
+        name: "ক্যাম্পাস",
+        banner: {
+          name: "Space Exploration",
+          description: "NASA plans a new Mars mission.",
+          image:
+            "https://images.pexels.com/photos/2152/sky-earth-space-working.jpg?auto=compress&cs=tinysrgb&w=300",
+          type: "imageTypeBig",
+        },
+
         links: [
           {
             name: "Learn JavaScript",
@@ -399,7 +398,142 @@ const fakeData = [
             link: "https://coursera.org",
           },
         ],
-        type: "linkType",
+      },
+
+      {
+        name: "স্বাস্থ্য",
+        banner: {
+          name: "Space Exploration",
+          description: "NASA plans a new Mars mission.",
+          image:
+            "https://images.pexels.com/photos/2152/sky-earth-space-working.jpg?auto=compress&cs=tinysrgb&w=300",
+          type: "imageTypeBig",
+        },
+
+        links: [
+          {
+            name: "Learn JavaScript",
+            description: "Master JS with interactive tutorials.",
+            image:
+              "https://images.pexels.com/photos/1181263/pexels-photo-1181263.jpeg?auto=compress&cs=tinysrgb&w=300",
+            link: "https://javascript.info",
+          },
+          {
+            name: "Online Courses",
+            description: "Best platforms for online learning.",
+            image:
+              "https://images.pexels.com/photos/4491461/pexels-photo-4491461.jpeg?auto=compress&cs=tinysrgb&w=300",
+            link: "https://coursera.org",
+          },
+        ],
+      },
+      {
+        name: "চাকরি",
+        banner: {
+          name: "Space Exploration",
+          description: "NASA plans a new Mars mission.",
+          image:
+            "https://images.pexels.com/photos/2152/sky-earth-space-working.jpg?auto=compress&cs=tinysrgb&w=300",
+          type: "imageTypeBig",
+        },
+
+        links: [
+          {
+            name: "Learn JavaScript",
+            description: "Master JS with interactive tutorials.",
+            image:
+              "https://images.pexels.com/photos/1181263/pexels-photo-1181263.jpeg?auto=compress&cs=tinysrgb&w=300",
+            link: "https://javascript.info",
+          },
+          {
+            name: "Online Courses",
+            description: "Best platforms for online learning.",
+            image:
+              "https://images.pexels.com/photos/4491461/pexels-photo-4491461.jpeg?auto=compress&cs=tinysrgb&w=300",
+            link: "https://coursera.org",
+          },
+        ],
+      },
+      {
+        name: "ক্যাম্পাস",
+        banner: {
+          name: "Space Exploration",
+          description: "NASA plans a new Mars mission.",
+          image:
+            "https://images.pexels.com/photos/2152/sky-earth-space-working.jpg?auto=compress&cs=tinysrgb&w=300",
+          type: "imageTypeBig",
+        },
+
+        links: [
+          {
+            name: "Learn JavaScript",
+            description: "Master JS with interactive tutorials.",
+            image:
+              "https://images.pexels.com/photos/1181263/pexels-photo-1181263.jpeg?auto=compress&cs=tinysrgb&w=300",
+            link: "https://javascript.info",
+          },
+          {
+            name: "Online Courses",
+            description: "Best platforms for online learning.",
+            image:
+              "https://images.pexels.com/photos/4491461/pexels-photo-4491461.jpeg?auto=compress&cs=tinysrgb&w=300",
+            link: "https://coursera.org",
+          },
+        ],
+      },
+      {
+        name: "ক্যাম্পাস",
+        banner: {
+          name: "Space Exploration",
+          description: "NASA plans a new Mars mission.",
+          image:
+            "https://images.pexels.com/photos/2152/sky-earth-space-working.jpg?auto=compress&cs=tinysrgb&w=300",
+          type: "imageTypeBig",
+        },
+
+        links: [
+          {
+            name: "Learn JavaScript",
+            description: "Master JS with interactive tutorials.",
+            image:
+              "https://images.pexels.com/photos/1181263/pexels-photo-1181263.jpeg?auto=compress&cs=tinysrgb&w=300",
+            link: "https://javascript.info",
+          },
+          {
+            name: "Online Courses",
+            description: "Best platforms for online learning.",
+            image:
+              "https://images.pexels.com/photos/4491461/pexels-photo-4491461.jpeg?auto=compress&cs=tinysrgb&w=300",
+            link: "https://coursera.org",
+          },
+        ],
+      },
+      {
+        name: "ক্যাম্পাস",
+        banner: {
+          name: "Space Exploration",
+          description: "NASA plans a new Mars mission.",
+          image:
+            "https://images.pexels.com/photos/2152/sky-earth-space-working.jpg?auto=compress&cs=tinysrgb&w=300",
+          type: "imageTypeBig",
+        },
+
+        links: [
+          {
+            name: "Learn JavaScript",
+            description: "Master JS with interactive tutorials.",
+            image:
+              "https://images.pexels.com/photos/1181263/pexels-photo-1181263.jpeg?auto=compress&cs=tinysrgb&w=300",
+            link: "https://javascript.info",
+          },
+          {
+            name: "Online Courses",
+            description: "Best platforms for online learning.",
+            image:
+              "https://images.pexels.com/photos/4491461/pexels-photo-4491461.jpeg?auto=compress&cs=tinysrgb&w=300",
+            link: "https://coursera.org",
+          },
+        ],
       },
     ],
   },

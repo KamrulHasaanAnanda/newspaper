@@ -2,6 +2,7 @@ import fakeData from "@/fakeData";
 import SubCategory from "./components/category/SubCategory";
 import TopNews from "./components/category/TopNews";
 import CommonCategory from "./components/category/CommonCategory";
+import CommonLinkCategory from "./components/category/CommonLinkCategory";
 
 export default function Home() {
   const data = fakeData;
@@ -31,6 +32,14 @@ export default function Home() {
               <CommonCategory data={item} index={index}/>
             </div>
           );
+        }
+        if (item?.type === "commonLinkTypes") {
+          return (
+            <div key={index}>
+              <CommonLinkCategory data={item} />
+            </div>
+          );
+          
         }
 
 
