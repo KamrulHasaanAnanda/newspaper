@@ -4,7 +4,7 @@ import ImageType from "../newsTypes/ImageType";
 
 function CommonCategory({ data }: any) {
   return (
-    <div className="grid grid-cols-2 gap-3 w-full">
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-3 sm:gap-4 lg:gap-6 w-full">
       {data?.news.map((item: any, index: any) => {
         const gridOneData = item.news.find(
           (section: any) => section.name === "grid-1"
@@ -18,8 +18,10 @@ function CommonCategory({ data }: any) {
             <SingleHeader title={item?.name} />
             <div
               className={`w-full ${
-                index === 0 || index % 2 == 0 ? "pl-10" : ""
-              } grid grid-cols-3 gap-3`}
+                index === 0 || index % 2 === 0 
+                  ? "pl-4 sm:pl-6 md:pl-8 lg:pl-10" 
+                  : "pr-4 sm:pr-6 md:pr-8 lg:pr-10"
+              } grid grid-cols-1 sm:grid-cols-3 gap-2 sm:gap-3`}
             >
               <div className="col-span-1 h-auto">
                 {gridOneData && (
@@ -30,12 +32,12 @@ function CommonCategory({ data }: any) {
                   />
                 )}
               </div>
-              <div className="col-span-2 flex gap-2 flex-wrap w-full min-h-80">
+              <div className="col-span-1 sm:col-span-2 flex gap-2 sm:gap-3 flex-wrap w-full min-h-[12rem] sm:min-h-80">
                 {gridTwoData &&
                   gridTwoData.map((item: any, index: any) => (
                     <div
                       key={index}
-                      className="w-[calc(50%-0.25rem)]" // 50% minus half of gap-2 (0.5rem / 2 = 0.25rem)
+                      className="w-full sm:w-[calc(50%-0.375rem)] md:w-[calc(50%-0.5rem)]" // Adjusted for different gap sizes
                     >
                       <ImageType
                         image={item?.image}

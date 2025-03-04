@@ -4,7 +4,7 @@ import { LuListFilter } from "react-icons/lu";
 
 function SubHeader() {
   return (
-    <div className='bg-[#0A0A0B] flex justify-between gap-4 items-center px-10 h-12'>
+    <div className='bg-[#0A0A0B] flex justify-between gap-4 items-center sm:px-10 h-12 overflow-x-auto'>
         <div></div>
         <div className='flex gap-6 items-center'>
             <p className=' font-light text-lg text-[#FFFFFF]'>
