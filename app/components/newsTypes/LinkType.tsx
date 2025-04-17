@@ -3,11 +3,12 @@ import React from "react";
 
 interface LinkTypeProps {
   data: any;
-//   description: string;
-//   type: string;
+  //   description: string;
+  //   type: string;
 }
 
 const LinkType: React.FC<LinkTypeProps> = ({ data }) => {
+  console.log('data hell', data)
   return (
     <div className="relative ">
       <div
@@ -22,21 +23,21 @@ const LinkType: React.FC<LinkTypeProps> = ({ data }) => {
         </p>
       </div>
 
-      {data?.links.map((link: any,index:any) => (
+      {data?.links.map((link: any, index: any) => (
         <div className="flex items-center  gap-4 bg-[#EEEEEEEE] w-full p-2 my-2 cursor-pointer" key={index}>
           <Image
             src={link.image}
-            alt={link.description}
+            alt={"image"}
             className="w-[50px] h-[34px] object-cover"
             width={50}
             height={34}
           />
           <p className="mt-0 text-[#1B1919] font-semibold text-sm">
-            {link.description}
+            {link.title}
           </p>
         </div>
       ))}
-      
+
     </div>
   );
 };

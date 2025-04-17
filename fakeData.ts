@@ -68,6 +68,7 @@ const fakeData = [
             image:
               "https://images.pexels.com/photos/270348/pexels-photo-270348.jpeg?auto=compress&cs=tinysrgb&w=300",
             link: "https://dev.to",
+            slug: "dev-to",
           },
           {
             description: "Latest tech gadgets",
@@ -134,15 +135,15 @@ const fakeData = [
       },
     ],
   },
+
   {
     type: "commonTypes",
     news: [
       {
-        name: "জাতীয়",
-
+        categoryName: "জাতীয়",
         news: [
           {
-            name: "grid-1",
+            name: "featured",
             items: {
               name: "Local Elections",
               description: "Results from different districts.",
@@ -152,7 +153,7 @@ const fakeData = [
             },
           },
           {
-            name: "grid-2",
+            name: "normal",
             items: [
               {
                 name: "Local Elections",
@@ -335,6 +336,7 @@ const fakeData = [
       },
     ],
   },
+
   {
     type: "photoGallery",
     title: "ফটো গ্যালারি",
@@ -553,3 +555,360 @@ const fakeData = [
 ];
 
 export default fakeData;
+
+const dataNew = [
+  {
+    categoryType: "Banner",
+    news: [
+      {
+        name: "New Tech Innovations",
+        description: "Latest breakthroughs in AI and Robotics.",
+        image:
+          "https://images.pexels.com/photos/2582937/pexels-photo-2582937.jpeg?auto=compress&cs=tinysrgb&w=300",
+        type: "imageType",
+        slug: "",
+      },
+    ],
+  },
+
+  {
+    categoryType: "Top News",
+    news: [
+      {
+        name: "New Tech Innovations",
+        description: "Latest breakthroughs in AI and Robotics.",
+        image:
+          "https://images.pexels.com/photos/2582937/pexels-photo-2582937.jpeg?auto=compress&cs=tinysrgb&w=300",
+        type: "imageType",
+      },
+    ],
+  },
+
+  {
+    categoryType: "commonTypes",
+    news: [
+      {
+        subCategory: "জাতীয়",
+        news: [
+          {
+            name: "featured",
+            items: {
+              name: "Local Elections",
+              description: "Results from different districts.",
+              image:
+                "https://images.pexels.com/photos/1468379/pexels-photo-1468379.jpeg?auto=compress&cs=tinysrgb&w=300",
+              type: "imageType",
+            },
+          },
+          {
+            name: "normal",
+            items: [
+              {
+                name: "Local Elections",
+                description: "Results from different districts.",
+                image:
+                  "https://images.pexels.com/photos/1468379/pexels-photo-1468379.jpeg?auto=compress&cs=tinysrgb&w=300",
+                type: "imageType",
+              },
+              {
+                name: "Local Elections",
+                description: "Results from different districts.",
+                image:
+                  "https://images.pexels.com/photos/1468379/pexels-photo-1468379.jpeg?auto=compress&cs=tinysrgb&w=300",
+                type: "imageType",
+              },
+              {
+                name: "Local Elections",
+                description: "Results from different districts.",
+                image:
+                  "https://images.pexels.com/photos/1468379/pexels-photo-1468379.jpeg?auto=compress&cs=tinysrgb&w=300",
+                type: "imageType",
+              },
+              {
+                name: "Local Elections",
+                description: "Results from different districts.",
+                image:
+                  "https://images.pexels.com/photos/1468379/pexels-photo-1468379.jpeg?auto=compress&cs=tinysrgb&w=300",
+                type: "imageType",
+              },
+            ],
+          },
+        ],
+      },
+
+      {
+        subCategory: "জাতীয়",
+        news: [
+          {
+            name: "grid-2",
+            items: [
+              {
+                name: "Local Elections",
+                description: "Results from different districts.",
+                image:
+                  "https://images.pexels.com/photos/1468379/pexels-photo-1468379.jpeg?auto=compress&cs=tinysrgb&w=300",
+                type: "imageType",
+              },
+              {
+                name: "Local Elections",
+                description: "Results from different districts.",
+                image:
+                  "https://images.pexels.com/photos/1468379/pexels-photo-1468379.jpeg?auto=compress&cs=tinysrgb&w=300",
+                type: "imageType",
+              },
+              {
+                name: "Local Elections",
+                description: "Results from different districts.",
+                image:
+                  "https://images.pexels.com/photos/1468379/pexels-photo-1468379.jpeg?auto=compress&cs=tinysrgb&w=300",
+                type: "imageType",
+              },
+              {
+                name: "Local Elections",
+                description: "Results from different districts.",
+                image:
+                  "https://images.pexels.com/photos/1468379/pexels-photo-1468379.jpeg?auto=compress&cs=tinysrgb&w=300",
+                type: "imageType",
+              },
+            ],
+          },
+          {
+            name: "grid-1",
+            items: {
+              name: "Local Elections",
+              description: "Results from different districts.",
+              image:
+                "https://images.pexels.com/photos/1468379/pexels-photo-1468379.jpeg?auto=compress&cs=tinysrgb&w=300",
+              type: "imageType",
+            },
+          },
+        ],
+      },
+      {
+        subCategory: "জাতীয়",
+
+        news: [
+          {
+            name: "grid-1",
+            items: {
+              name: "Local Elections",
+              description: "Results from different districts.",
+              image:
+                "https://images.pexels.com/photos/1468379/pexels-photo-1468379.jpeg?auto=compress&cs=tinysrgb&w=300",
+              type: "imageType",
+            },
+          },
+          {
+            name: "grid-2",
+            items: [
+              {
+                name: "Local Elections",
+                description: "Results from different districts.",
+                image:
+                  "https://images.pexels.com/photos/1468379/pexels-photo-1468379.jpeg?auto=compress&cs=tinysrgb&w=300",
+                type: "imageType",
+              },
+              {
+                name: "Local Elections",
+                description: "Results from different districts.",
+                image:
+                  "https://images.pexels.com/photos/1468379/pexels-photo-1468379.jpeg?auto=compress&cs=tinysrgb&w=300",
+                type: "imageType",
+              },
+              {
+                name: "Local Elections",
+                description: "Results from different districts.",
+                image:
+                  "https://images.pexels.com/photos/1468379/pexels-photo-1468379.jpeg?auto=compress&cs=tinysrgb&w=300",
+                type: "imageType",
+              },
+              {
+                name: "Local Elections",
+                description: "Results from different districts.",
+                image:
+                  "https://images.pexels.com/photos/1468379/pexels-photo-1468379.jpeg?auto=compress&cs=tinysrgb&w=300",
+                type: "imageType",
+              },
+            ],
+          },
+        ],
+      },
+
+      {
+        subCategory: "জাতীয়",
+        news: [
+          {
+            name: "grid-2",
+            items: [
+              {
+                name: "Local Elections",
+                description: "Results from different districts.",
+                image:
+                  "https://images.pexels.com/photos/1468379/pexels-photo-1468379.jpeg?auto=compress&cs=tinysrgb&w=300",
+                type: "imageType",
+              },
+              {
+                name: "Local Elections",
+                description: "Results from different districts.",
+                image:
+                  "https://images.pexels.com/photos/1468379/pexels-photo-1468379.jpeg?auto=compress&cs=tinysrgb&w=300",
+                type: "imageType",
+              },
+              {
+                name: "Local Elections",
+                description: "Results from different districts.",
+                image:
+                  "https://images.pexels.com/photos/1468379/pexels-photo-1468379.jpeg?auto=compress&cs=tinysrgb&w=300",
+                type: "imageType",
+              },
+              {
+                name: "Local Elections",
+                description: "Results from different districts.",
+                image:
+                  "https://images.pexels.com/photos/1468379/pexels-photo-1468379.jpeg?auto=compress&cs=tinysrgb&w=300",
+                type: "imageType",
+              },
+            ],
+          },
+          {
+            name: "grid-1",
+            items: {
+              name: "Local Elections",
+              description: "Results from different districts.",
+              image:
+                "https://images.pexels.com/photos/1468379/pexels-photo-1468379.jpeg?auto=compress&cs=tinysrgb&w=300",
+              type: "imageType",
+            },
+          },
+        ],
+      },
+    ],
+  },
+
+  {
+    categoryType: "photoGallery",
+    title: "ফটো গ্যালারি",
+    news: [
+      {
+        subCategory: "gallery",
+        items: [
+          {
+            name: "featured",
+            items: {
+              name: "Local Elections",
+              description: "Results from different districts.",
+              image:
+                "https://images.pexels.com/photos/1468379/pexels-photo-1468379.jpeg?auto=compress&cs=tinysrgb&w=300",
+              type: "imageType",
+            },
+          },
+          {
+            name: "normal",
+            items: [
+              {
+                name: "Local Elections",
+                description: "Results from different districts.",
+                image:
+                  "https://images.pexels.com/photos/1468379/pexels-photo-1468379.jpeg?auto=compress&cs=tinysrgb&w=300",
+                type: "imageType",
+              },
+              {
+                name: "Local Elections",
+                description: "Results from different districts.",
+                image:
+                  "https://images.pexels.com/photos/1468379/pexels-photo-1468379.jpeg?auto=compress&cs=tinysrgb&w=300",
+                type: "imageType",
+              },
+              {
+                name: "Local Elections",
+                description: "Results from different districts.",
+                image:
+                  "https://images.pexels.com/photos/1468379/pexels-photo-1468379.jpeg?auto=compress&cs=tinysrgb&w=300",
+                type: "imageType",
+              },
+              {
+                name: "Local Elections",
+                description: "Results from different districts.",
+                image:
+                  "https://images.pexels.com/photos/1468379/pexels-photo-1468379.jpeg?auto=compress&cs=tinysrgb&w=300",
+                type: "imageType",
+              },
+            ],
+          },
+        ],
+      },
+
+      {
+        subCategory: "normal",
+        items: [
+          {
+            name: "Nature Wonders",
+            description: "Beautiful landscapes around the world.",
+            image:
+              "https://images.pexels.com/photos/3244513/pexels-photo-3244513.jpeg?auto=compress&cs=tinysrgb&w=300",
+            type: "imageType",
+          },
+          {
+            name: "Wildlife Photography",
+            description: "Stunning animal photography.",
+            image:
+              "https://images.pexels.com/photos/247376/pexels-photo-247376.jpeg?auto=compress&cs=tinysrgb&w=300",
+            type: "imageType",
+          },
+          {
+            name: "Nature Wonders",
+            description: "Beautiful landscapes around the world.",
+            image:
+              "https://images.pexels.com/photos/3244513/pexels-photo-3244513.jpeg?auto=compress&cs=tinysrgb&w=300",
+            type: "imageType",
+          },
+          {
+            name: "Wildlife Photography",
+            description: "Stunning animal photography.",
+            image:
+              "https://images.pexels.com/photos/247376/pexels-photo-247376.jpeg?auto=compress&cs=tinysrgb&w=300",
+            type: "imageType",
+          },
+        ],
+      },
+    ],
+  },
+
+  {
+    categoryType: "commonLinkTypes",
+    news: [
+      {
+        subCategory: "featured",
+        displayName: "ক্যাম্পাস",
+        items: [
+          {
+            name: "Space Exploration",
+            description: "NASA plans a new Mars mission.",
+            image:
+              "https://images.pexels.com/photos/2152/sky-earth-space-working.jpg?auto=compress&cs=tinysrgb&w=300",
+            type: "imageTypeBig",
+          },
+          {
+            subCategory: "links",
+            items: [
+              {
+                name: "Learn JavaScript",
+                description: "Master JS with interactive tutorials.",
+                image:
+                  "https://images.pexels.com/photos/1181263/pexels-photo-1181263.jpeg?auto=compress&cs=tinysrgb&w=300",
+                link: "https://javascript.info",
+              },
+              {
+                name: "Online Courses",
+                description: "Best platforms for online learning.",
+                image:
+                  "https://images.pexels.com/photos/4491461/pexels-photo-4491461.jpeg?auto=compress&cs=tinysrgb&w=300",
+                link: "https://coursera.org",
+              },
+            ],
+          },
+        ],
+      },
+    ],
+  },
+];
